@@ -5,7 +5,7 @@ void Intruso::set_senha_vazada(std::string vazou){
 }
 
 std::vector<std::string> Intruso::traduz_senha(int tam){
-    std::vector<std::string> traduzidas;
+	
     std::string senha;
     std::string traduzida;
     int i = 0, b = 0;
