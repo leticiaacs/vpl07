@@ -4,13 +4,13 @@ void Intruso::set_senha_vazada(std::string vazou){
     senhas_vazadas.push_back(vazou);
 }
 
-std::vector<std::string> Intruso::traduz_senha(int tam){
+std::vector<std::string> Intruso::traduz_senha(){
 
     std::string senha;
     std::string traduzida;
     int i = 0, b = 0;
 
-    for(i=0; i<tam; i++){
+    for(i=0; i<senhas_vazadas.size(); i++){
         senha = senhas_vazadas[i];
 
         int a = 0, c = 0;
