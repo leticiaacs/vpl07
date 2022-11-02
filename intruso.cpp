@@ -141,10 +141,14 @@ std::string Intruso::crack_senha(){
 
     }
 	
-		std:: string resposta;
-		
 		for(int i = 0; i<6; i++) {
+		    
+		    if(i == 0) {
+		        resposta+=respFinal[i];
+		    } else {
+		    resposta+= " ";
 			resposta+= respFinal[i];
+		    }
 		}
 	
     return resposta;
